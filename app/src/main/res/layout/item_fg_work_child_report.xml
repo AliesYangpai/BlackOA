@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+
+
+
+       <!--顶部title描述-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_work_report"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_share_to"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_work_report_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Work report"
+                android:textColor="@color/black_text"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+
+        <!--中间文本描述-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="10dp"
+          android:background="@color/bg_all"
+          android:padding="10dp"
+          android:gravity="center_vertical"
+          >
+
+          <TextView
+              android:id="@+id/tv_work_report_info_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Diary:Slim Shady's Diary"
+              android:textColor="@color/black_text"
+              android:textSize="15sp"
+              />
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="5dp"
+              >
+              <TextView
+                  android:id="@+id/tv_work_report_info"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="I have finish all of the work include Ui,Server,and Pc controler"
+                  android:singleLine="true"
+                  android:textColor="@color/gray6"
+                  />
+
+
+          </LinearLayout>
+
+
+
+
+
+
+      </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_report_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray6"
+            android:text="2018/5/27 15:29"
+            android:textSize="13sp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="5dp"
+       android:background="@color/bg_all"
+       />
+
+
+
+
+</LinearLayout>

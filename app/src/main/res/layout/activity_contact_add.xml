@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_all"
+tools:context="com.blackcoffee.work.ui.activity.ContactAddActivity">
+
+
+<!--标题-->
+<include
+    android:id="@+id/include_title_contact_add"
+    layout="@layout/title_bar_aty_center_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_below="@id/include_title_contact_add"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_phone_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_seach_num"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/search_by_num"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/bg_all"
+             />
+
+        <LinearLayout
+            android:id="@+id/ll_swipe_scan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_swip_scan"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/swipe_scan"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_add_to_phone_contact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_add_to_contact"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/add_to_self_contact"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_top"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_invite_to_enterprice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_add_to_enterprise"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/invite_colleague_to_enterprice"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_phone_to_add_colleague"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_phone_add_colleague"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/phone_to_add_colleague"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_add_to_self_contact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_add_to_contact"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black_text"
+                android:text="@string/contact_to_add_conleague"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

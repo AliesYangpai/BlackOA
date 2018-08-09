@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">黑咖啡的OA</string>
+
+
+    <string name="permission_title">权限提醒</string>
+    <string name="permission_msg">您拒绝了我们必要的一些权限，将会导致应用某些功能无法使用，请在设置中授权！</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_sure">前往设置</string>
+
+
+    <string name="wifi_connect">已连入wifi</string>
+    <string name="mobel_connect">已连入4G</string>
+    <string name="no_net_connect">网络连接断开</string>
+
+
+    <string name="msg">消息</string>
+    <string name="connect">通讯</string>
+    <string name="work">工作</string>
+    <string name="app">应用</string>
+    <string name="mine">我的</string>
+
+    <string name="phone_contact">手机通讯录</string>
+    <string name="my_group">我的群组</string>
+    <string name="my_friends">我的好友</string>
+    <string name="department">部门架构</string>
+    <string name="top_contact">常用联系人</string>
+
+    <string name="add_friends">添加好友</string>
+
+
+    <string name="orgnization_info">组织信息</string>
+
+    <string name="wallet">钱包</string>
+    <string name="file">文件</string>
+
+    <string name="help">帮助中心</string>
+
+    <string name="setting">设置</string>
+
+
+    <string name="work_all">全部</string>
+    <string name="approve">审批</string>
+    <string name="work_report">汇报</string>
+    <string name="work_client">客户</string>
+    <string name="work_notice">公告</string>
+
+
+    <string name="share_to_friend">推荐给朋友</string>
+
+
+    <string name="go_check_in">去打卡</string>
+    <string name="go_publish_announce">发公告</string>
+    <string name="go_diary">写日志</string>
+    <string name="go_approval">提审批</string>
+
+
+    <string name="work_report_2">工作汇报</string>
+
+
+    <string name="finished_work">已完成工作</string>
+
+    <string name="unfinished_work">未完成工作</string>
+    <string name="coordinate_work">需要协调工作</string>
+
+    <string name="remark">备注</string>
+
+
+    <string name="add">添加</string>
+
+
+    <string name="search_by_num">输入手机号查找</string>
+    <string name="swipe_scan">扫一扫</string>
+    <string name="add_to_self_contact">添加来自手机通讯录</string>
+
+    <string name="invite_colleague_to_enterprice">邀请同事加入企业</string>
+    <string name="phone_to_add_colleague">手机号码添加同事</string>
+    <string name="contact_to_add_conleague">通讯录添加同事</string>
+
+
+    <string name="login_digest">0123456789</string>
+
+    <string name="search_phone">手机号搜索</string>
+    <string name="search">搜索</string>
+    <string name="sweep_scan">扫一扫</string>
+    <string name="error_sweep_device">扫描器异常</string>
+
+
+    <string name="error_no_contacts">无联系人</string>
+
+    <string name="detail">详情</string>
+    <string name="send">发送</string>
+    <string name="phone_num">手机号码</string>
+    <string name="email">邮箱</string>
+
+    <string name="personal_info">个人信息</string>
+
+    <string name="do_send_msg">发消息</string>
+    <string name="do_call">打电话</string>
+
+
+    <string name="have_not_get_contact">暂无联系方式</string>
+    <string name="not_sim_card">请安装sim卡</string>
+
+
+    <string name="start_group_chart">发起群聊</string>
+    <string name="group_my_create">我创建的</string>
+    <string name="group_my_invited">我加入的</string>
+
+    <string name="qr_code_identify_card">二维码名片</string>
+    <string name="qr_scan_to_add">在黑咖啡上扫一扫加我</string>
+    <string name="check_in">考勤打卡</string>
+    <string name="check_in_record">打卡记录</string>
+
+    <string name="check_in_only">打卡</string>
+    <string name="check_in_update">更新打卡</string>
+    <string name="apply_for_check_in_remedy">申请补卡</string>
+
+
+    <string name="apply_for_check_in_remedy_title">补卡申请</string>
+    <string name="connect_to_check_in_boss">联系负责人</string>
+
+    <string name="hint_check_remedy_reason">请输入缺卡原因</string>
+
+    <string name="check_remedy_reason">缺卡原因</string>
+    <string name="check_remedy_time">补卡时间</string>
+    <string name="upload_pic">上传图片</string>
+
+    <string name="approver">审批人</string>
+    <string name="copy_to">抄送人</string>
+    <string name="commit">提交</string>
+
+
+    <string name="take_break">请假</string>
+    <string name="take_break_reason">请假原因</string>
+    <string name="hint_take_break_reason">请输入请假原因</string>
+
+
+    <string name="go_out">外出</string>
+    <string name="go_out_reason">外出事由</string>
+    <string name="hint_go_out_reason">请输入外出事由</string>
+
+
+    <string name="over_time">加班</string>
+    <string name="over_time_reason">加班原因</string>
+    <string name="hint_over_time_reason">请输入加班原因</string>
+
+
+    <string name="business_trip_reason">出差事由</string>
+    <string name="hint_business_trip_reason">请输入出差事由</string>
+
+
+    <string name="goods_apply">物品申请</string>
+    <string name="goods_use_way">物品用途</string>
+    <string name="goods_name">物品名称</string>
+    <string name="hint_goods_use_way">请输入物品用途</string>
+    <string name="hint_goods_name">请输入物品名称</string>
+
+    <string name="goods_apply_introduce">领用说明</string>
+    <string name="hint_goods_apply_introduce">请输入领用说明</string>
+
+
+    <string name="have_to_fill">（必填）</string>
+
+    <string name="take_break_type">请假类型</string>
+    <string name="business_trip_place">出差地点</string>
+
+    <string name="take_break_start_time">开始时间</string>
+    <string name="take_break_end_time">结束时间</string>
+    <string name="take_break_end_period_hour">时长（小时）</string>
+    <string name="period">时长</string>
+
+
+    <string name="business_trip">出差</string>
+
+
+    <string name="please_select">请选择</string>
+    <string name="hint_start_time">请输入开始时间</string>
+    <string name="hint_end_time">请输入结束时间</string>
+
+
+    <string name="report_day_work_finish">已完成工作</string>
+    <string name="report_day_work_unfinish">未完成工作</string>
+    <string name="report_day_work_needs">需协调工作</string>
+
+
+    <string name="hint_report_day_work_finish">请选择已完成工作描述</string>
+    <string name="hint_report_day_work_unfinish">请输入未完成工作描述</string>
+    <string name="hint_report_day_work_needs">请输入需要协调工作描述</string>
+
+
+    <string name="hint_remark">请输入备注</string>
+
+
+    <string name="my_sending">我发出的</string>
+    <string name="my_receive">我收到的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

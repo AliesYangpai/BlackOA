@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:alpha="0.95"
+    tools:context="com.blackcoffee.work.ui.activity.WorkAddActivity">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        >
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_go_check_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_check_in"
+            android:drawableRight="@drawable/img_work_check_in"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_go_publish_announce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_publish_announce"
+            android:drawableRight="@drawable/img_work_pulish_announce"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_go_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_diary"
+            android:drawableRight="@drawable/img_diary"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_go_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_approval"
+            android:drawableRight="@drawable/img_work_approve"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,430 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_all"
+tools:context="com.blackcoffee.work.ui.fragment.FragmentUser">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+
+<!--标题-->
+<include
+    android:id="@+id/include_title_mine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/title_bar_fg_center"
+    />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_below="@id/include_title_mine"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:stateListAnimator="@drawable/lift_on_touch"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                tools:targetApi="lollipop"
+
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_order_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/black_text"
+                            android:text="Slim Shady"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+
+                            />
+
+
+
+
+                        <com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView
+                            android:id="@+id/iv_userHead"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/test_img_head_round"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_enterprise_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black_text"
+                            android:text="西安黑咖啡网络科技有限公司"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_certificate_icon"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/img_certificate_icon"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_certificate_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已认证"
+                                android:textColor="@color/qhy_blue"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="13sp"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <!--第一行-->
+
+            <LinearLayout
+                android:id="@+id/ll_mine_top_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/include_search"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_wallet"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/wallet"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_file"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/file"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_department_structure"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_orgnization_structure"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/orgnization_info"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_all"
+                />
+
+
+
+
+
+            <!--第二行-->
+            <LinearLayout
+                android:id="@+id/ll_mine_top_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/include_search"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_help"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/help"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_share_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_share_to"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/share_to_friend"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_all"
+                />
+
+            <!--第三行-->
+            <LinearLayout
+                android:id="@+id/ll_mine_top_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/include_search"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_setting"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/setting"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

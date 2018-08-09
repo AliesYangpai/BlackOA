@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+       <com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView
+           android:id="@+id/civ_user_head"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:src="@drawable/img_contact_bg"
+           />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_text"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

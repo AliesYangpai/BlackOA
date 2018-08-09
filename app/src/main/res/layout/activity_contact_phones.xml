@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context="com.blackcoffee.work.ui.activity.ContactPhonesActivity">
+
+
+<!--标题-->
+<include
+    android:id="@+id/include_title_phone_contacts"
+    layout="@layout/title_bar_aty_center_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <include
+        android:id="@+id/include_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title_search"
+        android:layout_below="@id/include_title_phone_contacts"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:indexBar_selectedTextColor="@color/qhy_blue"
+        app:indexBar_textColor="@color/gray1"
+        app:indexBar_layout_width="40dp"
+        app:indexBar_textSize="14sp"
+        app:indexBar_textSpace="3dp"
+        android:layout_below="@+id/include_search"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

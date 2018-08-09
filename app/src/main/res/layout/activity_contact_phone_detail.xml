@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_all"
+tools:context="com.blackcoffee.work.ui.activity.ContactPhoneDetailActivity">
+
+
+<!--标题-->
+<include
+    android:id="@+id/include_title_contact_phone_detail"
+    layout="@layout/title_bar_aty_center_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_contact_phone_detail"
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/fl_identify_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boder_bg_white_radius_2"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray6"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="90dp"
+                    android:text="151290755661"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_greet_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hi,This is The real Slim Shady from Xi An Black Coffee Inc"
+                        android:textColor="@color/gray6"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_edit_greek"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+           <!--头像相关布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="4dp"
+                android:background="@color/transparent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                >
+                <com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView
+                    android:id="@+id/civ_user_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/test_img_head_round" />
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Slim Shady"
+                    android:textColor="@color/black_text"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/fl_identify_area"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/send"
+            android:background="@drawable/selector_blue_bg"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

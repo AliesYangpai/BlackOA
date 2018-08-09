@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView
+            android:id="@+id/civ_user_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/img_contact_bg"
+            />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="25dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Slim Shady"
+                    android:textColor="@color/black_text"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Slim Shady"
+                    android:textColor="@color/gray6"
+                    android:textSize="13sp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_contact_phone_add"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/add"
+                android:background="@drawable/boder_bg_blue_radius_2"
+                android:textSize="13sp"
+                android:padding="3dp"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:paddingTop="5dp">-->
+
+    <!--<ImageView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/img_avatar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:src="@drawable/img_setting" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/img_avatar"-->
+        <!--tools:text="张三"-->
+        <!--android:textColor="#373737"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/tv_mobile"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_name"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_toRightOf="@id/img_avatar"-->
+        <!--tools:text="18712345678"-->
+        <!--android:textColor="#969696" />-->
+
+<!--</RelativeLayout>-->
+
+
+
+

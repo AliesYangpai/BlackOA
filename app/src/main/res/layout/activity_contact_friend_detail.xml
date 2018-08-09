@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    tools:context="com.blackcoffee.work.ui.activity.ContactFriendDetailActivity">
+
+
+    <!--标题-->
+    <include
+        android:id="@+id/include_title_contact_friend_detail"
+        layout="@layout/title_bar_aty_center_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_contact_friend_detail"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+
+        <FrameLayout
+            android:id="@+id/fl_identify_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boder_bg_white_radius_2"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="90dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_enterprise_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="西安黑咖啡网络科技有限公司"
+                        android:textColor="@color/black_text"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_certificate_icon"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/img_certificate_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_certificate_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="已认证"
+                            android:textColor="@color/qhy_blue"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bg_all" />
+
+
+                <!--电话号码-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_num"
+                        android:textColor="@color/gray6"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1516999885"
+                        android:textColor="@color/black_text"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bg_all" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/gray6"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="65288451@BlackCoffeeTlak.com"
+                        android:textColor="@color/black_text"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--头像相关布局-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView
+                    android:id="@+id/civ_user_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/test_img_head_round" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/civ_user_head"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Slim Shady"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_qr_icon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/img_qr_info_icon"
+                        android:layout_weight="1"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+
+
+        <!--标题-->
+        <include
+            android:id="@+id/include_title_contact_friend_detail"
+            layout="@layout/inclue_bottom_2_botton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/bg_all"-->
+    <!--tools:context="com.blackcoffee.work.ui.activity.ContactFriendDetailActivity">-->
+
+
+    <!--&lt;!&ndash;标题&ndash;&gt;-->
+    <!--<include-->
+        <!--android:id="@+id/include_title_contact_friend_detail"-->
+        <!--layout="@layout/title_bar_aty_center_left"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/include_title_contact_friend_detail"-->
+        <!--android:layout_marginTop="0.5dp"-->
+        <!--android:background="@color/white">-->
+
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_identify_area"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="20dp">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@drawable/boder_bg_white_radius_2"-->
+                <!--android:elevation="3dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="25dp"-->
+                <!--android:paddingRight="25dp">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginTop="90dp"-->
+
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_enterprise_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="西安黑咖啡网络科技有限公司"-->
+                        <!--android:textColor="@color/black_text"-->
+                        <!--android:textStyle="bold" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_certificate_icon"-->
+                            <!--android:layout_width="14dp"-->
+                            <!--android:layout_height="14dp"-->
+                            <!--android:src="@drawable/img_certificate_icon" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_certificate_state"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="5dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="已认证"-->
+                            <!--android:textColor="@color/qhy_blue"-->
+                            <!--android:textSize="13sp"-->
+                            <!--android:textStyle="bold" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/bg_all" />-->
+
+
+                <!--&lt;!&ndash;电话号码&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/phone_num"-->
+                        <!--android:textColor="@color/gray6"-->
+                        <!--android:textSize="13sp" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_phone"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="1516999885"-->
+                        <!--android:textColor="@color/black_text"-->
+
+                        <!--/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/bg_all" />-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/email"-->
+                        <!--android:textColor="@color/gray6"-->
+                        <!--android:textSize="13sp" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_email"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="65288451@BlackCoffeeTlak.com"-->
+                        <!--android:textColor="@color/black_text"-->
+
+                        <!--/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--&lt;!&ndash;头像相关布局&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@color/transparent"-->
+                <!--android:elevation="4dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.blackcoffee.work.ui.widget.cirlceimageview.CircleImageView-->
+                    <!--android:id="@+id/civ_user_head"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:src="@drawable/test_img_head_round" />-->
+
+       <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_toRightOf="@id/civ_user_head"-->
+                    <!--android:text="Slim Shady"-->
+                    <!--android:textColor="@color/black_text"-->
+                    <!--android:textSize="17sp"-->
+                    <!--android:textStyle="bold" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_qr_icon"-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:src="@drawable/img_qr_info_icon" />-->
+
+
+            <!--</RelativeLayout>-->
+
+
+        <!--</FrameLayout>-->
+
+
+
+
+        <!--&lt;!&ndash;标题&ndash;&gt;-->
+        <!--<include-->
+            <!--android:id="@+id/include_title_contact_friend_detail"-->
+            <!--layout="@layout/inclue_bottom_2_botton"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+<!--</RelativeLayout>-->

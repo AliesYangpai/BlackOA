@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/white"
+tools:context="com.blackcoffee.work.ui.fragment.FragmentReportDayScan">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+
+<!--标题-->
+<include
+    android:id="@+id/include_title_send_or_receive"
+    layout="@layout/include_layout_send_or_receive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    />
+
+
+
+
+
+
+
+
+<FrameLayout
+    android:id="@+id/fragment_container_report_day_scan_child"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/include_title_send_or_receive"
+
+    />
+
+
+
+
+</RelativeLayout>
+
+

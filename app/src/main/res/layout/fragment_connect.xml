@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.blackcoffee.work.ui.fragment.FragmentConnect">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+   <!--标题-->
+    <include
+        android:id="@+id/include_title_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar_fg_center_right_img"
+        />
+
+
+
+
+
+
+    <include
+        android:id="@+id/include_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title_search"
+        android:layout_below="@id/include_title_contact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv_contact"
+        android:layout_below="@id/include_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_all"
+                />
+
+            <!--上三项-->
+            <LinearLayout
+                android:id="@+id/ll_contact_top3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/include_search"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/ll_phone_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_phone_contact"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/phone_contact"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_my_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_my_friends"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/my_friends"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_my_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_my_group"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/my_group"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grayline1"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_department_structure"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/img_department_structure"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/department"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_text"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_all"
+                />
+
+
+            <!--常用联系人-->
+            <LinearLayout
+                android:id="@+id/ll_top_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/ll_contact_top3"
+                >
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="@color/black_text"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:text="@string/top_contact"
+                    />
+
+
+                <com.blackcoffee.work.ui.widget.listview.ChildListView
+                    android:id="@+id/clv_top_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/lv_divider"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:scrollbars="none"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

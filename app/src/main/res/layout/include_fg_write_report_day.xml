@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+
+        <!--今日完成工作-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_goods_use_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/report_day_work_finish"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit_goods_user_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/ll_goods_use_way"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_finished_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_report_day_work_finish"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/text_grays"
+                    android:textSize="15sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+
+        <!--未完成工作-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_un_finish_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/report_day_work_unfinish"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit_unfinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/ll_un_finish_work"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_unfinished_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_report_day_work_unfinish"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/text_grays"
+                    android:textSize="15sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <!--需要协调的工作-->
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_needs_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/report_day_work_needs"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit_needs_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/ll_needs_work"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_needs_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_report_day_work_needs"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/text_grays"
+                    android:textSize="15sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

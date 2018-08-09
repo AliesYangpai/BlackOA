@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@color/white"
+    >
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    >
+
+
+
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+        >
+
+
+
+        <ImageView
+            android:id="@+id/iv_announce"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_announce_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ya'll act like you never seen a white person before jaws all on the floor like Pam like Tommy just burst in the door started whoopin her ass worse than before"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:lines="3"
+            android:ellipsize="end"
+            android:textColor="@color/black_text"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_announce"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+    <!--底部说明-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/tv_announce_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-11-25"
+            android:textColor="@color/gray6"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slim Shady"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray6"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_all"
+        />
+
+
+
+
+</LinearLayout>
